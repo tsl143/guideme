@@ -1,0 +1,18 @@
+#homepage section {
+    background: rgba(102, 102, 102, 0.7);
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+header{
+    background: rgba(0, 0, 0, 0.7);
+    height: 70px;
+    text-align: center;
+}
+.maintitle {
+    color: #FFFFFF;
+    font: bold 18px/1.5 Arial;
+    padding-top: 18px;
+}
+#map{display:none;}
+#map-canvas{position:fixed!important;top:0;left:0;z-index: -1}

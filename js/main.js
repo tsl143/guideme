@@ -1,10 +1,12 @@
 var lat,lon;
 $(document).ready(function(){
 getLocation();
+initialize();
 $('header').click(function(){
         homesweethome();
     });
     $('#homepage section').click(function(){
+    $('#homepage section').hide();
     tabs=$(this).data('title');
     initialize(tabs);
     });
