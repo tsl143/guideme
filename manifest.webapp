@@ -1,0 +1,16 @@
+{
+  "name": "Guide Me",
+  "description": "Current locations and Near By",
+  "launch_path": "/index.html",
+  "icons": {
+  },
+  "permissions": {
+      "geolocation": "Obtain the current location of the user."
+    },
+    "type" : "privileged",
+  "developer": {
+    "name": "Lavish Aggarwal",
+    "url": "http://www.about.me/lavish"
+  },
+  "default_locale": "en"
+}
