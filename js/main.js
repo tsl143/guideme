@@ -1,11 +1,20 @@
 var lat,lon;
 $(document).ready(function(){
 getLocation();
+initialize();
+$('#overlay').click(function(){
+$('#popup').hide();    
+$('#overlay').hide();    
+});
 $('header').click(function(){
         homesweethome();
     });
     $('#homepage section').click(function(){
+    $('#homepage').hide();
+    $("#popup").hide();
+    $('#map').show();
     tabs=$(this).data('title');
+    window.localStorage.setItem('currentcat',tabs);
     initialize(tabs);
     });
 });
@@ -31,7 +40,6 @@ function initialize(genre) {
     radius: 500,
     types: [genre]
   };
-  infowindow = new google.maps.InfoWindow();
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
 }
@@ -60,7 +68,13 @@ function createMarker(place) {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    alert(place.name);
+    $("#popup").html('');
+    $("#popup").removeClass();
+    $("#popup").addClass(window.localStorage.getItem('currentcat'));
+    $("#popup").append("<u>"+place.name+"</u>");
+    $("#popup").append("<br/>"+place.vicinity);
+    $("#popup").show();
+    $("#overlay").show();
     });
 }
 function getLocation()
