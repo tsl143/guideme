@@ -67,7 +67,7 @@ function createMarker(place) {
 
   });
 
-  google.maps.event.addListener(marker, 'tap', function() {
+  google.maps.event.addListener(marker, 'click', function() {
     $("#popup").html('');
     $("#popup").removeClass();
     $("#popup").addClass(window.localStorage.getItem('currentcat'));
