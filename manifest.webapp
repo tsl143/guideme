@@ -14,5 +14,5 @@
             "geolocation": {
     "description": "Required to get current location of user"
                     }
-    }
+ }
 }
