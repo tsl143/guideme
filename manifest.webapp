@@ -1,20 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "Guide Me",
-  "description": "Current locations and Near By",
-  "launch_path": "/index.html",
-  "icons": {
-  },
-  "permissions": {
-      "geolocation": "Obtain the current location of the user."
-    },
-    "type" : "privileged",
-  "developer": {
-    "name": "Trishul, Lavish, Adit, Tushar",
-    "url": "http://www.facebook.com/mozillacommunityrajasthan"
-  },
-  "default_locale": "en"
-=======
   "name": "Find Me Google",
   "description": "Helps to find nearby animities",
   "launch_path": "/index.html",
@@ -30,6 +14,5 @@
             "geolocation": {
     "description": "Required to get current location of user"
                     }
-    }
->>>>>>> upstream/master
+ }
 }
