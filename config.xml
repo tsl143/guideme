@@ -68,4 +68,5 @@
     <plugin name="Notification" value="org.apache.cordova.Notification"/>
     <plugin name="Globalization" value="org.apache.cordova.Globalization"/>
   </plugins>
+  <access origin="*" />
 </widget>
