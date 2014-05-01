@@ -27,7 +27,7 @@
   <!-- versionCode is optional and Android only -->
   <name>Find Me Google</name>
   <description>Are you stucked somewhere? Wanna know whats nearby you in quick time? Yeah? This app will help you out. It fetches your current location and provides you information about your nearby ATM's, Shopping Mall's, Police, Hospital's, BAR and Cafe's</description>
-  <author href="https://build.phonegap.com" email="support@phonegap.com">TSL</author>
+  <author href="https://build.phonegap.com" email="lucky.lavish@gmail.com">Lavish Aggarwal</author>
   <!-- versionCode is optional and Android only -->
   <!--
     access elements control the Android whitelist.
