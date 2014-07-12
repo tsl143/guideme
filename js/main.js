@@ -1,13 +1,14 @@
 var lat,lon;
 $(document).ready(function(){
 getLocation();
-initialize();
+
 $('#overlay').click(function(){
 $('#popup').hide();    
 $('#overlay').hide();    
 });
 $('header').click(function(){
         homesweethome();
+        $('#map').hide();
     });
     $('#homepage section').click(function(){
     $('#homepage').hide();
@@ -32,12 +33,12 @@ function initialize(genre) {
 
   map = new google.maps.Map(document.getElementById('map-canvas'), {
     center: pyrmont,
-    zoom: 15
+    zoom: 13
   });
 
   var request = {
     location: pyrmont,
-    radius: 500,
+    radius: 5000,
     types: [genre]
   };
   var service = new google.maps.places.PlacesService(map);
@@ -90,4 +91,5 @@ function showPosition(position)
   {
   lat=position.coords.latitude;
   lon=position.coords.longitude;
+  initialize(tabs);
   }
