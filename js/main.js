@@ -29,13 +29,18 @@ $('#homepage').slideDown();
 var map;
 var infowindow;
 function initialize(genre) {
+  console.log(lat+','+lon);
   var pyrmont = new google.maps.LatLng(lat,lon);
 
   map = new google.maps.Map(document.getElementById('map-canvas'), {
     center: pyrmont,
     zoom: 13
   });
-
+  var marker = new google.maps.Marker({
+    position: pyrmont,
+    title:"Your Location"
+  });
+  marker.setMap(map);
   var request = {
     location: pyrmont,
     radius: 5000,
